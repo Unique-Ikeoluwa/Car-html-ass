@@ -6,29 +6,163 @@
     <meta name="keywords" content="car, rental, categories">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;}
+        .container {
+            display: flex;
+            background: #f3f2f3;
+            padding: 60px;
+            height: 500px;
+        }
+        img{
+            width: 50px;
+            margin-left: 15px;
+        }
+        .orange-car{
+            background: #b56b1d;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+        }
+         .blue-car{
+            background: #05535b;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+        }
+         .green-car{
+            background: #013333;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+        }
+        .orange{
+            background-color: #e38527;
+            border-radius: 10px 0px 0px 10px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .blue{
+            background-color: #006973;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .green{
+            background-color: #004133;
+            border-radius: 0px 10px 10px 0px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .orange-cat{
+            color: #fdd070;
+            font-size: small;
+            text-decoration: solid;
+        }
+        .blue-cat{
+            color: #18b8c7;
+            font-size: small;
+            text-decoration: solid;
+        }
+        .green-cat{
+            color: #15a183;
+            font-size: small;
+            text-decoration: solid;
+        }
+        .btn-orange{
+            color: #e38527;
+        }
+        .btn-blue{
+            color: #006973;
+        }
+        .btn-green{
+            color: #004133;
+        }
+        button{
+            padding: 20px 50px;
+            border: none;
+            border-radius: 50px;
+        }
+        .green-car img{
+            transform: scaleX(-1);
+        }
+        h2{
+            margin-bottom: 50px;
+            color: white;
+        }
+        p{
+            word-wrap: break-word;
+            width: 200px;
+            margin-top: 0;
+        }
+        .content{
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
 
-    <div>
-        <div>
-            <h2>SEDANS</h2>
-            <p>Choose a sedan for its affordability and excellent fuel economy. 
-            Ideal for cruising in the city or on your next road trip.</p>
-            <button>Learn More</button>
+    <div class="container">
+        <div class="orange">
+            <div class=orange-car>
+            <img src="car-transport-svgrepo-com.svg" alt="Sedan image logo">
+            </div>
+            <div class="content">
+                <h2>SEDANS</h2>
+                <p class="orange-cat"><strong>Choose a sedan for its affordability and excellent fuel economy. 
+            Ideal for cruising in the city or on your next road trip.</strong></p>
+            </div>
+            <div class="btn">
+                <button class="btn-orange">Learn More</button>
+            </div>
         </div>
 
-        <div>
-            <h2>SUVS</h2>
-            <p>Take an SUV for its spacious interior, power, and versatility. 
-            Perfect for your next family vacation and off-road adventures.</p>
-            <button>Learn More</button>
+        <div class="blue">
+            <div class=blue-car>
+            <img src="suv-transportation-car-suv-svgrepo-com.svg" alt="SUV image logo">
+            </div>
+            <div class="content">
+                <h2>SUVS</h2>
+                <p class="blue-cat"><strong>Take an SUV for its spacious interior, power, and versatility. 
+            Perfect for your next family vacation and off-road adventures.</strong></p>
+            </div>
+            <div class="btn">
+                <button class="btn-blue">Learn More</button>
+            </div>
         </div>
 
-        <div>
-            <h2>LUXURY</h2>
-            <p>Cruise in the best car brands without the bloated prices. 
-            Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
-            <button>Learn More</button>
+        <div class="green">
+            <div class=green-car>
+            <img src="car-limousine-svgrepo-com.svg" alt="LUXURY image logo">
+            </div>
+            <div class="content">
+                <h2>LUXURY</h2>
+                <p class="green-cat"><strong>Cruise in the best car brands without the bloated prices. 
+            Enjoy the enhanced comfort of a luxury rental and arrive in style.</strong></p>
+            </div>
+            <div class="btn">
+                <button class="btn-green">Learn More</button>
+            </div>
         </div>
     </div>
 
